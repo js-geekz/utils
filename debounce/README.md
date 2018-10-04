@@ -8,7 +8,7 @@ There are lot of libraries that provide this implementation, such as
   - Underscore
   - and so on. 
 
-But mujhe khujli thi, so maine khud se implement kiya !
+But mujhe khujli thi, so maine khud se implement kiya ! (I got itched, that's why this code i stiched.)
 
 ### Usage
 
