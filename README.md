@@ -14,22 +14,25 @@ We have followed prettier rules for coding style with few custom config. For eg.
 
 ```javascript
 // Use single quotes
-let str = 'double-quote'; // wrong
+// prettier-ignore
+let str = "double-quote"; // wrong
 
 let str = 'single-quote'; // right
 ```
 
 ```javascript
 // Semi-colons
-let str = 'no-semi'; // wrong
+// prettier-ignore
+let str = 'no-semi' // wrong
 
 let str = 'semi'; // right
 ```
 
 ```javascript
 // Trailing Comma
+// prettier-ignore
 let obj = {
-  name: 'John Doe',
+  name: 'John Doe'
 }; // wrong
 
 let obj = {
