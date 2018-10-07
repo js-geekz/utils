@@ -1,7 +1,7 @@
-import debounce from debounce;
+import debounce from './debounce';
 
 const packages = {
-    debounce
+  debounce,
 };
 
 export default packages;
