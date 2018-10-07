@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@js-geeks/utils",
   "version": "0.0.1",
   "description": "An npm package for hosting implementations of various utility functions we use in our day to day business.",
   "main": "index.js",
