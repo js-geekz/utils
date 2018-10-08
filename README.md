@@ -6,9 +6,13 @@ Packages Available :
 
     1. Debounce
 
+## Prerequisites
+
+Install [NodeJS](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/en/docs/install).
+
 ## Development
 
-`npm install` or `yarn install`
+`yarn`
 
 We have followed prettier rules for coding style with few custom config. For eg.
 
