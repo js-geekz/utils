@@ -4,7 +4,7 @@
   "description": "An npm package for hosting implementations of various utility functions we use in our day to day business.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=production mocha './**/*.test.js' '!./node_modules/**/*.test.js' --require babel-core/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/js-geekz/utils/issues"
   },
-  "homepage": "https://github.com/js-geekz/utils#readme"
+  "homepage": "https://github.com/js-geekz/utils#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
 }
