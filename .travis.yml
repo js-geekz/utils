@@ -1,6 +1,6 @@
-language: javascript
-before_script:
-  - npm install
-
-script:
-  - npm run test
+language: node_js
+node_js:
+  - "8"
+cache:
+  directories:
+    - "node_modules"
