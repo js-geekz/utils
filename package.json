@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fix-style": "prettier --write \"{,!(node_modules)/**/}*.js\"",
-    "precommit": "pretty-quick --staged"
+    "fix-style": "prettier --write \"{,!(node_modules)/**/}*.js\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "post-checkout": "yarn"
+    }
   },
   "repository": {
     "type": "git",
