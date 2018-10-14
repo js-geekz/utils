@@ -4,7 +4,7 @@
   "description": "An npm package for hosting implementations of various utility functions we use in our day to day business.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=production mocha './**/*.test.js' '!./node_modules/**/*.test.js' --require babel-core/register --recursive",
     "fix-style": "prettier --write \"{,!(node_modules)/**/}*.js\""
   },
   "husky": {
@@ -24,7 +24,11 @@
   },
   "homepage": "https://github.com/js-geekz/utils#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
     "husky": "^1.1.1",
+    "mocha": "^5.2.0",
     "prettier": "1.14.3",
     "pretty-quick": "^1.7.0"
   }
