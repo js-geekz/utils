@@ -7,5 +7,5 @@ export default function(funcRef, timeout) {
     lastTimeoutRef = setTimeout(() => {
       funcRef.apply(this, args);
     }, timeout);
-  }
+  };
 }
